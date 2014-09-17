@@ -1,0 +1,176 @@
+/*
+ Localizable.strings
+ HealthNew
+ 
+ Created by wang on 14-9-15.
+ Copyright (c) 2014年 夏 伟. All rights reserved.
+ */
+"LOGINLABEL_USERNAME" = "UserName";
+"LOGINLABEL_PASSWORD" = "PassWord";
+"LOGINBUTTON_OK" = "OK";
+"LOGINBUTTON_REGISTER" = "Register";
+"LOGINBUTTON_REMENBER" = "Remenber";
+"LOGINTEXTFIELD_USERNAME" = "Please input username";
+"LOGINTEXTFIELD_PASSWORD" = "Please input password";
+"USER_AGE" = "Age";
+"USER_BIRTHDAY" = "Birthday";
+"USER_GENDER" = "Gender";
+"USER_HEIGHT" = "Height";
+"USER_WEIGHT" = "Weight";
+"USER_FAT" = "Fat";
+"USER_MUSCLE" = "Muscle";
+"USER_WATER" = "Water";
+"USER_VISFAT" = "Visceral";
+"USER_BONE" = "Bone";
+"USER_BMI" = "BMI";
+"USER_BMR" = "BMR";
+"USER_SYS" = "SYS";
+"USER_DIA" = "DIA";
+"USER_OXYGEN" = "Oxygen";
+"USER_PULSE" = "Pulse";
+"USER_GLUCOSE" = "Glucose";
+"USER_TEMPERATURE" = "Temperature";
+"TEST_TIME" = "Test time";
+"ENTER" = "Enter";
+"ADDNEWUSER" = "AddNewUser";
+"EBELTER_HEALTH_CENTER" = "Ebelter Health Center";
+"BACK" = "Back";
+"SAVE" = "Save";
+"SAVE_FAILED" = "Save failed";
+"SAVE_SUCCESSED" = "Save successed";
+"CANCEL" = "Cancel";
+"DONE" = "Done";
+"HOME" = "Home";
+"MEASURE" = "Measure";
+"HISTORY" = "History";
+"CHART" = "Chart";
+"SETTINGS" = "Settings";
+"DATATYPE_WEIGHT" = "Weight";
+"DATATYPE_BODYFAT" = "Body fat";
+"DATATYPE_BLOODPRESSURE" = "Blood pressure";
+"DATATYPE_OXYGEN" = "Oxygen";
+"DATATYPE_GLUCOSE" = "Glucose";
+"USER" = "User";
+"EDITUSER" = "Edit User";
+"DELETEUSER" = "Delete user";
+"USERINFO" = "User Info";
+"USERINFO_NAME" = "Name";
+"USERINFO_GENDER" = "Gender";
+"USERINFO_BRITHDAY" = "Brithday";
+"USERINFO_AGE" = "Age";
+"USERINFO_HEIGHT" = "Height";
+"USERINFO_WEIGHT" = "Weight";
+"USERINFO_ATHLETICTYPE" = "Profession";
+"ATHLETICTYPE_NON_ATHLETE" = "Non-athlete";
+"ATHLETICTYPE_AMATEUR_ATHLETE" = "Amateur athlete";
+"ATHLETICTYPE_PROFEESSIONAL_ATHLETE" = "Profeessional athlete";
+"GENDER_MALE" = "Male";
+"GENDER_FEMALE" = "Female";
+"OPTIONAL_INFO" = "Optional Info";
+"DELETE_USER" = "Delete User";
+"SURE_DELETE_USER" = "Sure to delete the user?";
+"YES" = "Yes";
+"PLEASE_SET_BRITHDAY" = "Please set brithday!";
+"NOTICE" = "Notice";
+"PLEASE_INPUT_USERNAME" = "Please input username!";
+"PLEASE_INPUT_GENDER" = "Please input gender!";
+"PLEASE_INPUT_HEIGHT" = "Please input height!";
+"PLEASE_INPUT_WEIGHT" = "Please input weight!";
+"PLEASE_INPUT_BRITHDAY" = "Please input brithday!";
+"PLEASE_INPUT_ATHLETE_TYPE" = "Please set athlete type!";
+"OK" = "Ok";
+"SET_USER_INFO" = "set user information";
+"SET_OPTIONAL_INFO" = "set optional infomation";
+"MEASURE_TYPE_WEIGHT" = "Weight Measure";
+"MEASURE_TYPE_BLOODPRESSURE" = "Blood pressure Measure";
+"MEASURE_TYPE_BODYFAT" = "BodyFat Measure";
+"MEASURE_TYPE_OXYGEN" = "Oxygen Measure";
+"MEASURE_TYPE_GLUCOSE" = "Glucose Measure";
+"MEASURE_TYPE_TEMPERATURE" = "Temperature Measure";
+
+"NOVA_GOTIT" = "Nova_Yes01en.wav";
+
+"GET_DATA" = "Get Data";//获取数据
+"REPORT" = "Report";    //建议报告
+"ANALYZE" = "Analyze";  //分析
+"PRESS_UNIT_MMHG" = "mmHg";
+"PULSE_UNIT_BPM" = "Beats/min";
+"GLUCOSE_UNIT_MGDL" = "mg/dL";
+"WEIGHT_UNIT_KG" = "kg";
+"WEIGHT_UNIT_LB" = "lb";
+"TEMPERATURE_UNIT_SHESHIDU" = "℃";
+"TEMPERATURE_UNIT_HUASHIDU" = "℉";
+"KCAL" = "Kcal";
+"CONFIRM" = "Confirm";
+"MUST_CHOOSE_ONE_ITEM" = "Select at least one measurement options！";
+
+"PLEASE_WAITTING" = "Please wait...";
+"LOGIN_SUCCESS" = "Login success";
+"LOGIN_FAILED" = "Login failed";
+
+"LOGIN" = "Login";
+
+"MENU" = "Menu";
+"MY_ACCOUNT" = "My account";
+"MEASUREMENT" = "Measurement";
+"MY_HISTORY" = "History";
+"EXIT" = "Exit";
+"PLEASE_INPUT_ACCOUNT" = "Accont";
+"PLEASE_INPUT_PASSWORD" = "Password";
+"REPEAT_PASSWORD" = "Please repeat password";
+"REGIST" = "Registration";
+"FOGET_PASSWORD" = "Foget";
+
+"CHANGE_PASSWORD" = "Change password";
+"Please input the correct format mailbox" = "Please input the correct format mailbox";
+"GET_FAILED" = "Get failed";
+"INPUT_CHECKCODE" = "Input verification code";
+"CHECK_SUCCESS" = "Successful verification";
+"CHECK_FAILED" = "Verification failed";
+"REGIST_SUCCESS" = "Register success";
+"REGIST_FAILED" = "Register failed";
+"EMAIL_HAS_REGISTED" = "Email has been registered";
+
+"PLEASE_INPUT_EMAIL" = "Input Email";
+"PLEASE_INPUT_CHECKCODE" = "Input verification code";
+"GET_CHECKCODE" = "Get verification code";
+"NEXT" = "Next";
+"NEW_PASSWORD" = "New password";
+"INPUT_CANNOT_EMPTY" = "The input can not be empty";
+"PASSWPRD_MUST_SAME" = "Two password must be the same";
+"SET_PASSWORD_SUCCESSED" = "Password set successfully";
+
+"RECENT_WEIGHT" = "Recent weight";
+"RECENT_BLOODPRESS" = "Recent bloodpress";
+"RECENT_FAT" = "Recent fat";
+"RECENT_TEMPERATURE" = "Recent temperature";
+
+"HealthABC" = "HealthABC";
+
+"BMI_LEVEL_Underweight" = "Underweight";
+"BMI_LEVEL_Normal" = "Normal";
+"BMI_LEVEL_Overweight" = "Overweight";
+"BMI_LEVEL_Obesity" = "Obesity";
+"BMI_LEVEL_Severe obesity" = "Severe obesity";
+
+"BLOODPRESS_LEVEL_Low" = "Low pressure";
+"BLOODPRESS_LEVEL_Normal" = "Normal";
+"BLOODPRESS_LEVEL_High" = "High pressure";
+
+"PULSE_LEVEL_Slow" = "Slow";
+"PULSE_LEVEL_Normal" = "Normal";
+"PULSE_LEVEL_Fast" = "Fast";
+
+"EARLIER" = "Earlier";
+"LATER" = "Later";
+
+"REGISTERED" = "Has been registered";
+
+"USERNAME_EXISTED" = "User already exists";
+"USERINFO_UNIT" = "Unit";
+"CM/KG/C" = "cm/kg/℃";
+"INCH/LB/F" = "ft/lb/℉";
+"WELCOME" = "Welcome!";
+"DAY" = "Day";
+"WEEK" = "Week";
+"MONTH" = "Month";

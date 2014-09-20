@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NutritionViewController : UIViewController
+@interface NutritionViewController : UIViewController<UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @end

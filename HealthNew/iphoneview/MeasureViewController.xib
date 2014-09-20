@@ -6,7 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeasureViewController">
             <connections>
+                <outlet property="bloodpressBtn" destination="A9c-TT-a4c" id="Fdq-rj-dwZ"/>
+                <outlet property="nutritionBtn" destination="Vo2-wj-XBq" id="WlS-rY-Lqe"/>
+                <outlet property="temperatureBtn" destination="amB-qt-fdd" id="9jM-eD-Bn4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weightfatBtn" destination="KVP-ZC-WDV" id="jjW-bb-zvd"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

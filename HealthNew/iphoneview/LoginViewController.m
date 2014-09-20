@@ -26,6 +26,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UIButton *enterBtn;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -68,6 +69,14 @@
 -(void)initMyView
 {
     [_enterBtn addTarget:self action:@selector(enterBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.enterBtn
+                                  attribute:NSLayoutAttributeRight
+                                  relatedBy:NSLayoutRelationEqual
+                                     toItem:self.scrollView
+                                  attribute:NSLayoutAttributeLeft
+                                 multiplier:10.0
+                                   constant:100.0]];
 }
 
 -(UITabBarController *)setTabBarController
@@ -78,68 +87,61 @@
     _homeNavViewController = [[UINavigationController alloc]initWithRootViewController:homeViewController];
     
     MeasureViewController *measureViewController = [[MeasureViewController alloc] initWithNibName:@"MeasureViewController" bundle:nil];
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowColor = [UIColor colorWithRed:0 green:0.7 blue:0.8 alpha:1];
+    shadow.shadowOffset = CGSizeMake(0, 0);
     _measureNavViewController = [[UINavigationController alloc] initWithRootViewController:measureViewController];
-//    _measureNavViewController.navigationItem.title = NSLocalizedString(@"MEASURE", nil);
-    [_measureNavViewController.navigationItem setTitle:NSLocalizedString(@"MEASURE", nil)];
+    [measureViewController.navigationItem setTitle:NSLocalizedString(@"MEASURE", nil)];
     _measureNavViewController.navigationBar.tintColor = [UIColor purpleColor];
     [_measureNavViewController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [_measureNavViewController.navigationBar setBackgroundColor:[UIColor blueColor]];
     [_measureNavViewController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                                     [UIColor greenColor],
+                                                                     [UIColor blackColor],
                                                                      NSForegroundColorAttributeName,
-                                                                     [UIColor colorWithRed:0 green:0.7 blue:0.8 alpha:1],
-                                                                     NSShadowAttributeName,
-                                                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                                                     shadow,
                                                                      NSShadowAttributeName,
                                                                      [UIFont fontWithName:@"Arial-Bold" size:0.0],
                                                                      NSFontAttributeName,nil]];
     HistoryViewController *historyViewController = [[HistoryViewController alloc] initWithNibName:@"HistoryViewController" bundle:nil];
     _historyNavViewController = [[UINavigationController alloc] initWithRootViewController:historyViewController];
     [_historyNavViewController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [_historyNavViewController.navigationBar
-     setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                             [UIColor whiteColor],
-                             NSForegroundColorAttributeName,
-                             [UIColor colorWithRed:0 green:0.7 blue:0.8 alpha:1],
-                             NSShadowAttributeName,
-                             [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
-                             NSShadowAttributeName,
-                             [UIFont fontWithName:@"Arial-Bold" size:0.0],
-                             NSFontAttributeName,nil]];
+    [historyViewController.navigationItem setTitle:NSLocalizedString(@"HISTORY", nil)];
+    [_historyNavViewController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     [UIColor blackColor],
+                                                                     NSForegroundColorAttributeName,
+                                                                     shadow,
+                                                                     NSShadowAttributeName,
+                                                                     [UIFont fontWithName:@"Arial-Bold" size:0.0],
+                                                                     NSFontAttributeName,nil]];
     ChartViewController *chartViewController = [[ChartViewController alloc] initWithNibName:@"ChartViewController" bundle:nil];
     _chartNavViewController = [[UINavigationController alloc] initWithRootViewController:chartViewController];
     [_chartNavViewController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [_chartNavViewController.navigationBar
-     setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                             [UIColor whiteColor],
-                             NSForegroundColorAttributeName,
-                             [UIColor colorWithRed:0 green:0.7 blue:0.8 alpha:1],
-                             NSShadowAttributeName,
-                             [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
-                             NSShadowAttributeName,
-                             [UIFont fontWithName:@"Arial-Bold" size:0.0],
-                             NSFontAttributeName,nil]];
+    [chartViewController.navigationItem setTitle:NSLocalizedString(@"CHART", nil)];
+    [_chartNavViewController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     [UIColor blackColor],
+                                                                     NSForegroundColorAttributeName,
+                                                                     shadow,
+                                                                     NSShadowAttributeName,
+                                                                     [UIFont fontWithName:@"Arial-Bold" size:0.0],
+                                                                     NSFontAttributeName,nil]];
     SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
     _settingsNavViewController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
     [_settingsNavViewController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [_settingsNavViewController.navigationBar
-     setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                             [UIColor whiteColor],
-                             NSForegroundColorAttributeName,
-                             [UIColor colorWithRed:0 green:0.7 blue:0.8 alpha:1],
-                             NSShadowAttributeName,
-                             [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
-                             NSShadowAttributeName,
-                             [UIFont fontWithName:@"Arial-Bold" size:0.0],
-                             NSFontAttributeName,nil]];
+    [settingsViewController.navigationItem setTitle:NSLocalizedString(@"SETTINGS", nil)];
+    [_settingsNavViewController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     [UIColor blackColor],
+                                                                     NSForegroundColorAttributeName,
+                                                                     shadow,
+                                                                     NSShadowAttributeName,
+                                                                     [UIFont fontWithName:@"Arial-Bold" size:0.0],
+                                                                     NSFontAttributeName,nil]];
     
     tabBarController.viewControllers = [[NSArray alloc]initWithObjects:_homeNavViewController,_measureNavViewController,_historyNavViewController,_chartNavViewController,_settingsNavViewController, nil];
-//    [tabBarController. setTitle:@"dsa"];
     [_homeNavViewController.tabBarItem setTitle:NSLocalizedString(@"HOME", nil)];
     [_measureNavViewController.tabBarItem setTitle:NSLocalizedString(@"MEASURE", nil)];
     [_historyNavViewController.tabBarItem setTitle:NSLocalizedString(@"HISTORY", nil)];
     [_chartNavViewController.tabBarItem setTitle:NSLocalizedString(@"CHART", nil)];
     [_settingsNavViewController.tabBarItem setTitle:NSLocalizedString(@"SETTINGS", nil)];
+    [tabBarController setSelectedIndex:1];//选中测量界面
     tabBarController.delegate = self;
     
     return tabBarController;
@@ -151,11 +153,6 @@
     {
         [tabBarController dismissViewControllerAnimated:NO completion:nil];
     }
-    else
-    {
-        
-    }
-        
 }
 
 @end

@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
                 <outlet property="enterBtn" destination="36H-na-7kt" id="pnR-uu-uL0"/>
+                <outlet property="scrollView" destination="AwL-xi-MVH" id="Nhx-Mw-zVx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,16 +25,37 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-xi-MVH">
-                    <rect key="frame" x="20" y="130" width="280" height="308"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Pgu-p3-oYp">
+                    <rect key="frame" x="20" y="20" width="133" height="279"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="bIT-Sm-2BW">
+                    <rect key="frame" x="170" y="20" width="130" height="279"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-xi-MVH">
+                    <rect key="frame" x="20" y="317" width="280" height="231"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Pgu-p3-oYp" firstAttribute="leading" secondItem="AwL-xi-MVH" secondAttribute="leading" id="9v5-5g-mlQ"/>
+                <constraint firstItem="Pgu-p3-oYp" firstAttribute="leading" secondItem="36H-na-7kt" secondAttribute="leading" id="A7g-H5-dZi"/>
+                <constraint firstItem="Pgu-p3-oYp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="DVm-u7-S69"/>
+                <constraint firstItem="bIT-Sm-2BW" firstAttribute="trailing" secondItem="AwL-xi-MVH" secondAttribute="trailing" id="Rlc-k3-6h6"/>
+                <constraint firstItem="bIT-Sm-2BW" firstAttribute="leading" secondItem="Pgu-p3-oYp" secondAttribute="trailing" constant="17" id="ULL-Nf-fmT"/>
                 <constraint firstItem="36H-na-7kt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ZHF-Ni-O5S"/>
+                <constraint firstItem="Pgu-p3-oYp" firstAttribute="bottom" secondItem="bIT-Sm-2BW" secondAttribute="bottom" id="ZPD-Hd-QVV"/>
+                <constraint firstItem="Pgu-p3-oYp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dPl-H8-ObC"/>
                 <constraint firstAttribute="bottom" secondItem="36H-na-7kt" secondAttribute="bottom" constant="30" id="fJW-3R-poW"/>
+                <constraint firstItem="AwL-xi-MVH" firstAttribute="top" secondItem="Pgu-p3-oYp" secondAttribute="bottom" constant="18" id="flm-bO-TnX"/>
+                <constraint firstAttribute="bottom" secondItem="AwL-xi-MVH" secondAttribute="bottom" constant="20" symbolic="YES" id="iU0-Ar-4gt"/>
+                <constraint firstItem="Pgu-p3-oYp" firstAttribute="top" secondItem="bIT-Sm-2BW" secondAttribute="top" id="kZv-gD-NOg"/>
+                <constraint firstItem="bIT-Sm-2BW" firstAttribute="trailing" secondItem="36H-na-7kt" secondAttribute="trailing" id="kdH-2n-M5K"/>
                 <constraint firstAttribute="trailing" secondItem="36H-na-7kt" secondAttribute="trailing" constant="20" id="plY-AF-aU4"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
